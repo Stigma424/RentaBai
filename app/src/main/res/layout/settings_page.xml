@@ -7,10 +7,16 @@
     android:layout_height="match_parent"
     tools:context=".SettingsActivity"
     android:orientation="vertical">
-<Button
-    android:layout_width="wrap_content"
-    android:layout_height="wrap_content"
-    android:text="About the Developers"
-    android:id="@+id/DeveloperButton">
-</Button>
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="About the Developers"
+        android:id="@+id/DeveloperButton">
+    </Button>
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/BackButton"
+        android:text="Back">
+    </Button>
 </LinearLayout>

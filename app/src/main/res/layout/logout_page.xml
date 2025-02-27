@@ -19,7 +19,6 @@
         android:layout_height="wrap_content"
         android:id="@+id/ConfirmButton"
         android:text="Confrim">
-
     </Button>
     <Button
         android:layout_width="wrap_content"
