@@ -6,12 +6,54 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".DeveloperActivity"
-    android:orientation="vertical">
-    <Button
+    android:orientation="vertical"
+    android:padding="30dp">
+<TextView
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:text="About me Page"
+    android:layout_gravity="center"
+    android:textColor="@color/black">
+
+</TextView>
+    <ImageView
+        android:id="@+id/DevPfp"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:src="@drawable/test1"
+        android:layout_gravity="center">
+
+    </ImageView>
+    <TextView
+        android:id="@+id/DevName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="John Dhenzell Ermac"
+        android:layout_gravity="center"
+        android:textColor="@color/black">
+
+    </TextView>
+    <TextView
+        android:id="@+id/DevBio"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Basta Bios"
+        android:layout_gravity="center"
+        android:textColor="@color/black">
+
+    </TextView>
+    <Button
         android:id="@+id/BackButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
         android:text="Back">
+
+    </Button>
+    <Button
+        android:id="@+id/ShiftButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="BonelessGod44">
 
     </Button>
 </LinearLayout>
