@@ -24,9 +24,9 @@
             <ImageView
                 android:layout_width="60dp"
                 android:layout_height="60dp"
-                android:src="@drawable/profile_pic"
+                android:padding="8dp"
                 android:scaleType="centerCrop"
-                android:padding="8dp"/>
+                android:src="@drawable/profile_pic" />
 
             <LinearLayout
                 android:layout_width="0dp"
@@ -146,18 +146,28 @@
                 android:padding="16dp"
                 android:background="@drawable/rounded_button_primary"
                 android:layout_marginBottom="60dp"/>
-
             <Button
-                android:id="@+id/logout"
+                android:id="@+id/developer_button"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="Log Out"
+                android:text="About the Developers"
+                android:textColor="@color/white"
+                android:textStyle="bold"
+                android:textSize="16sp"
+                android:padding="16dp"
+                android:background="@drawable/rounded_button_primary"
+                android:layout_marginBottom="60dp"/>
+            <Button
+                android:id="@+id/back_button"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Back"
                 android:textSize="16sp"
                 android:padding="16dp"
                 android:textStyle="bold"
-                android:textColor="@color/white"
-                android:layout_marginTop="50dp"
-                android:background="@drawable/rounded_logout_button"/>
+                android:textColor="@color/black"
+                android:layout_marginTop="20dp"
+                />
         </LinearLayout>
     </LinearLayout>
 </ScrollView>
