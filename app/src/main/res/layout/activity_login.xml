@@ -82,9 +82,9 @@
             android:layout_height="wrap_content"
             android:text="Login"
             android:textSize="16sp"
-            android:background="@drawable/rounded_button_primary"
             android:textColor="@color/white"
             android:textStyle="bold"
+            android:backgroundTint="@color/med_aquamarine"
             android:layout_marginBottom="17dp"/>
 
         <LinearLayout

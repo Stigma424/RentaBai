@@ -1,119 +1,225 @@
-<?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
-    android:id="@+id/main"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".DevelopersActivity"
-    android:orientation="vertical"
-    android:padding="30dp">
-<Button
-    android:layout_width="wrap_content"
-    android:layout_height="wrap_content"
-    android:text="back"
-    android:id="@+id/back_button"
-    >
-</Button>
-    <androidx.cardview.widget.CardView
-        android:id="@+id/DeveloperDisplay1"
+    tools:context=".DevelopersActivity">
+
+    <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_below="@id/emailDisplay"
-        android:layout_marginTop="50dp"
-        app:cardCornerRadius="12dp"
-        app:cardElevation="4dp"
-        app:cardBackgroundColor="@android:color/white"
-        >
+        android:orientation="vertical"
+        android:padding="30dp">
 
-        <LinearLayout
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="BACK"
+            android:id="@+id/back_button"
+            android:layout_marginBottom="20dp"/>
+
+        <TextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:orientation="horizontal"
-            android:padding="16dp"
-            android:gravity="center_vertical">
+            android:gravity="center"
+            android:textSize="24sp"
+            android:textStyle="bold"
+            android:text="DEVELOPER'S PROFILE"/>
 
-            <!-- phone number icon -->
-            <ImageView
-                android:layout_width="40dp"
-                android:layout_height="40dp"
-                android:src="@drawable/profile_pic"
-                android:contentDescription="phone Icon"/>
+        <ImageView
+            android:layout_width="200dp"
+            android:layout_height="200dp"
+            android:layout_gravity="center"
+            android:contentDescription="Profile Icon"
+            android:layout_marginTop="10dp"
+            android:src="@drawable/ermac_devpic" />
 
-            <!-- Text Layout -->
-            <LinearLayout
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:orientation="vertical"
-                android:layout_marginStart="12dp">
-
-                <!-- title -->
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:text="Phone number"
-                    android:textStyle="bold"
-                    android:textSize="18sp"
-                    android:textColor="@android:color/black"/>
-
-                <!-- content -->
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:text="+63 905 699 1234"
-                    android:textSize="16sp"
-                    android:textColor="@android:color/darker_gray"/>
-            </LinearLayout>
-        </LinearLayout>
-    </androidx.cardview.widget.CardView>
-    <androidx.cardview.widget.CardView
-        android:id="@+id/DeveloperDisplay2"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_below="@id/emailDisplay"
-        android:layout_marginTop="50dp"
-        app:cardCornerRadius="12dp"
-        app:cardElevation="4dp"
-        app:cardBackgroundColor="@android:color/white">
-
-        <LinearLayout
+        <androidx.cardview.widget.CardView
+            android:id="@+id/DeveloperDisplay1"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:orientation="horizontal"
-            android:padding="16dp"
-            android:gravity="center_vertical">
+            android:layout_marginTop="30dp"
+            android:layout_marginBottom="30dp"
+            app:cardCornerRadius="12dp"
+            app:cardElevation="4dp"
+            app:cardBackgroundColor="@android:color/white">
 
-            <!-- phone number icon -->
-            <ImageView
-                android:layout_width="40dp"
-                android:layout_height="40dp"
-                android:src="@drawable/profile_pic"
-                android:contentDescription="phone Icon"/>
 
-            <!-- Text Layout -->
             <LinearLayout
-                android:layout_width="wrap_content"
+                android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:orientation="vertical"
-                android:layout_marginStart="12dp">
+                android:orientation="horizontal"
+                android:padding="16dp">
 
-                <!-- title -->
-                <TextView
+                <LinearLayout
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="Phone number"
-                    android:textStyle="bold"
-                    android:textSize="18sp"
-                    android:textColor="@android:color/black"/>
+                    android:orientation="vertical"
+                    android:layout_marginStart="12dp">
 
-                <!-- content -->
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:text="+63 905 699 1234"
-                    android:textSize="16sp"
-                    android:textColor="@android:color/darker_gray"/>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Name"
+                        android:textStyle="bold"
+                        android:textSize="18sp"
+                        android:textColor="@android:color/black"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="John Dhenzell D. Ermac"
+                        android:textSize="16sp"
+                        android:textColor="@android:color/darker_gray"
+                        android:layout_marginBottom="20dp"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Email"
+                        android:textStyle="bold"
+                        android:textSize="18sp"
+                        android:textColor="@android:color/black"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Johndhenzell2@gmail.com"
+                        android:textSize="16sp"
+                        android:textColor="@android:color/darker_gray"
+                        android:layout_marginBottom="20dp"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Role"
+                        android:textStyle="bold"
+                        android:textSize="18sp"
+                        android:textColor="@android:color/black"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Hacker"
+                        android:textSize="16sp"
+                        android:textColor="@android:color/darker_gray"
+                        android:layout_marginBottom="20dp"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Team Skills"
+                        android:textStyle="bold"
+                        android:textSize="18sp"
+                        android:textColor="@android:color/black"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Communication"
+                        android:textSize="16sp"
+                        android:textColor="@android:color/darker_gray"/>
+                </LinearLayout>
             </LinearLayout>
-        </LinearLayout>
-    </androidx.cardview.widget.CardView>
-</LinearLayout>
+
+        </androidx.cardview.widget.CardView>
+
+        <ImageView
+            android:layout_width="200dp"
+            android:layout_height="200dp"
+            android:src="@drawable/montil_devpic"
+            android:layout_gravity="center"
+            android:layout_marginTop="10dp"
+            android:contentDescription="Profile Icon"/>
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/DeveloperDisplay2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="50dp"
+            app:cardCornerRadius="12dp"
+            app:cardElevation="4dp"
+            app:cardBackgroundColor="@android:color/white">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:padding="16dp">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:layout_marginStart="12dp">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Name"
+                        android:textStyle="bold"
+                        android:textSize="18sp"
+                        android:textColor="@android:color/black"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Gabriel B. Montil"
+                        android:textSize="16sp"
+                        android:textColor="@android:color/darker_gray"
+                        android:layout_marginBottom="20dp"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Email"
+                        android:textStyle="bold"
+                        android:textSize="18sp"
+                        android:textColor="@android:color/black"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="gabrielmontil44@gmail.com"
+                        android:textSize="16sp"
+                        android:textColor="@android:color/darker_gray"
+                        android:layout_marginBottom="20dp"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Role"
+                        android:textStyle="bold"
+                        android:textSize="18sp"
+                        android:textColor="@android:color/black"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Hustler"
+                        android:textSize="16sp"
+                        android:textColor="@android:color/darker_gray"
+                        android:layout_marginBottom="20dp"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Team Skills"
+                        android:textStyle="bold"
+                        android:textSize="18sp"
+                        android:textColor="@android:color/black"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Collaboration"
+                        android:textSize="16sp"
+                        android:textColor="@android:color/darker_gray"/>
+                </LinearLayout>
+            </LinearLayout>
+        </androidx.cardview.widget.CardView>
+
+    </LinearLayout>
+
+</ScrollView>
