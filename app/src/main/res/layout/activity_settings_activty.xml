@@ -144,7 +144,7 @@
                 android:textStyle="bold"
                 android:textSize="16sp"
                 android:padding="16dp"
-                android:background="@drawable/rounded_button_primary"
+                android:backgroundTint="@color/med_aquamarine"
                 android:layout_marginBottom="60dp"/>
 
             <Button
@@ -157,7 +157,7 @@
                 android:textStyle="bold"
                 android:textColor="@color/white"
                 android:layout_marginTop="50dp"
-                android:background="@drawable/rounded_logout_button"/>
+                android:backgroundTint="@color/red"/>
         </LinearLayout>
     </LinearLayout>
 </ScrollView>

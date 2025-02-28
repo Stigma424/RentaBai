@@ -391,9 +391,9 @@
                 android:layout_marginHorizontal="15dp"
                 android:layout_marginTop="900dp"
                 android:layout_weight="1"
-                android:background="@drawable/rounded_button_secondary"
+                android:backgroundTint="@color/red"
                 android:text="BACK"
-                android:textColor="@color/med_aquamarine"
+                android:textColor="@color/white"
                 android:textStyle="bold" />
 
             <Button
@@ -403,7 +403,6 @@
                 android:layout_marginHorizontal="15dp"
                 android:layout_marginTop="900dp"
                 android:layout_weight="1"
-                android:background="@drawable/rounded_button_primary"
                 android:backgroundTint="@color/med_aquamarine"
                 android:text="EDIT"
                 android:textColor="@color/white"
